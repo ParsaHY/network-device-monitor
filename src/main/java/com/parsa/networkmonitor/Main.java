@@ -16,12 +16,11 @@ public class Main {
         manager.addDevice(server01);
 
         List<Device> devices = manager.getAllDevices();
-        for (int i = 0; i < devices.size(); i++) {
-            System.out.println(devices.get(i));
+        for (Device device : devices) {
+            System.out.println(device);
         }
 
         System.out.println("---------\n" + manager.findDeviceById(2));
         System.out.println(manager.findDeviceById(99));
     }
-
 }

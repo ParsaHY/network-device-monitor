@@ -19,9 +19,9 @@ public class DeviceManager {
     }
 
     public Device findDeviceById(int id) {
-        for (int i = 0; i < devices.size(); i++) {
-            if (devices.get(i).getId() == id) {
-                return devices.get(i);
+        for (Device device : devices) {
+            if (device.getId() == id) {
+                return device;
             }
         }
         return null;
