@@ -26,4 +26,10 @@ public class DeviceManager {
         }
         return null;
     }
+
+    public void checkAllDevices(NetworkChecker checker) {
+        for (Device device : devices) {
+            checker.checkStatus(device);
+        }
+    }
 }

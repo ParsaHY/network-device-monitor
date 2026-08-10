@@ -15,12 +15,15 @@ public class Main {
         manager.addDevice(switch01);
         manager.addDevice(server01);
 
-        List<Device> devices = manager.getAllDevices();
-        for (Device device : devices) {
+        NetworkChecker checker = new NetworkChecker();
+        manager.checkAllDevices(checker);
+
+        for (Device device : manager.getAllDevices()) {
             System.out.println(device);
         }
 
-        System.out.println("---------\n" + manager.findDeviceById(2));
+        System.out.println("------------------------------------------------\n" +
+        manager.findDeviceById(2));
         System.out.println(manager.findDeviceById(99));
     }
 }
