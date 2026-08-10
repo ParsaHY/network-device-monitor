@@ -43,6 +43,6 @@ public class Device {
 
     @Override
     public String toString() {
-        return "Device{id=" + this.id + ", name='" + this.name + "', ipAddress='" + this.ipAddress + "', status=" + this.status;
+        return "Device{id=" + this.id + ", name='" + this.name + "', ipAddress='" + this.ipAddress + "', status=" + this.status + "}";
     }
 }
